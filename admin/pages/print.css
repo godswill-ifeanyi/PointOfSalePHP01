@@ -1,0 +1,11 @@
+@page {
+    size: A4;
+    margin: 0;
+}
+.p-btn {
+    display: none;
+    visibility: hidden;
+}
+* {
+    font-family: sans-serif;
+}

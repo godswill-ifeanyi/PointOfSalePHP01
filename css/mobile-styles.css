@@ -1,0 +1,244 @@
+@media(prefers-reduced-motion) {
+  .hide {
+    transition: none;
+  }  
+}
+@media only screen and (max-width: 769px) {
+  nav {
+    width: 100%;
+    position: fixed;
+}
+  nav div img {
+      width: 80px;
+  }
+  nav div label > h4 {
+      font-size: 1.2rem;
+      cursor: pointer;
+  }
+  .d-block {
+    height: 40vh;
+  }
+  #menu-close {
+    width: 30px;
+    height: 30px;
+    display: initial;
+    margin: 20px 0 20px 0;
+  }
+  #menu-btn {
+      display: initial;
+  }
+  nav .navigation ul {
+    width: 200px;
+    height: 100vh;
+    background: rgba(17, 20, 104, 0.45);
+    backdrop-filter: blur(4.5px);
+    border: 1px solid rgba (255, 255, 255, 0.18);
+    position: absolute;
+    top: 0;
+    right: -200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    transition: 0.6s ease;
+  }
+  nav .navigation ul.active {
+    right: 0;
+  }
+  nav .navigation ul li {
+    padding: 20px 0 20px 40px;
+    margin-left: 0;
+  }
+  nav .navigation ul li a {
+    color: #fff;
+  }
+  .d-block {
+    width: 100%;
+  }
+  #home {
+    margin-top: 80px;
+  }
+  #blog {
+    padding: 8vw 4vw 0 4vw;
+  }
+  .box-border {
+    padding: 2.5vmin 2.5vmin 4.5vmin 2.5vmin;
+}
+#course {
+  padding: 8vw 4vw 0 4vw; 
+}
+  #registration {
+    padding: 6vw 4vw;
+}
+#registration .reminder .time {
+  flex-wrap: wrap;
+}
+.numbers .rect {
+  width: 10rem;
+  height: 10rem;
+}
+.numbers .rect h1 {
+  font-size: 2rem;
+}
+.cover .content > h1 {
+  font-size: 6vmin;
+}
+.section-4 .team {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  padding: 3vmin 0 10vmin 1vmin;
+}
+.section-4 .card {
+  width: 18rem;
+}
+.section-4 .corousel-inner {
+  width: 18rem;
+  margin-left: -35vmin;
+}
+.card-body > .card-text {
+  font-size: 2vmin;
+}
+.form-control {
+  height: 7vmin;
+  margin-bottom: 7vmin;
+}
+
+/*Blog*/
+#blog-container {
+  padding: 8vw 4vw;
+}
+#blog-container .blogpost {
+  width: 100%;
+  margin-top: 30px;
+}
+#blog-container .blogpost img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+}
+
+
+@media only screen and (max-width: 475px) {
+  /*Global Class*/
+  .small-banner {
+    height: 150px;
+}
+.d-block {
+  background-size: cover;
+  background-position: center;
+}
+#home h2 {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+  nav {
+    position: fixed;
+    padding: 4vw 8vw 3vw 4vw;
+  }
+  nav div img {
+    width: 50px;
+  }
+  nav div label > h4 {
+    font-size: 1rem;
+  }
+  .span {
+    position: absolute;
+    top: 55%;
+    left: 7%;
+}
+  nav .navigation ul li {
+    padding: 10px 0 10px 20px;
+  }
+  #home {
+    margin-top: 70px;
+  }
+    #registration {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    #registration .reminder .time {
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    #course {
+      margin-top: 20vmin;
+    }
+    #course .courses .cost {
+      bottom: 70px;
+    }
+    .section-4 .team {
+      flex-direction: column;
+    }
+    .section-4 .card {
+      width: 16rem;
+      height: 25rem;
+    }
+    .numbers .rect {
+      height: 7rem;
+    }
+    .card-body > h3 {
+      font-size: 4vmin;
+    }
+    .card-body > .card-text {
+      font-size: 3vmin;
+    }
+    .form-control {
+      height: 7vmin;
+      margin-bottom: 7vmin;
+    }
+    .section-4 .carousel-inner {
+      margin-left: -7vmin;
+    }
+    a > span {
+      font-size: 4.5vmin;
+    }
+    #client .client-base .client-img {
+      transform: translateX(340px);
+    }
+
+    /*Blog*/
+    #blog-container {
+      flex-direction: column;
+      margin-top: 20vmin;
+    }
+    #blog-container .blogs {
+      width: 100%;
+    }
+    #blog-container .cate {
+      width: 100%;
+    }
+    #blog-container .blogpost {
+      margin-top: 70px;
+    }
+
+    /*Course detail*/
+    #course-inner {
+      flex-direction: column; 
+      margin-top: 13vmin;
+    }
+    #course-inner .overview {
+      width: 100%;
+    }
+    #course-inner .overview .course-img {
+      width: 100%;
+      height: 40vh;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 20px;
+  }
+    #course-inner .form {
+      margin-left: 0;
+    }
+    .course-flex {
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-bottom: 5vmin;
+  }
+}
